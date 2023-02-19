@@ -146,7 +146,7 @@ ActiveRecord::Schema.define(version: 2023_02_18_154234) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "hobby"
-    t.text "prifile"
+    t.text "profile"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
