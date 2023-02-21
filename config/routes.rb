@@ -11,8 +11,6 @@ Rails.application.routes.draw do
   post 'signup', to: 'users#create'
   resources :users, only: %i[new create show] do
     resource :relationships, only: [:create, :destroy]
-    get 'relationshops/followings'
-    get 'relationshops/followers'
   end
   resources :events do
     collection do
